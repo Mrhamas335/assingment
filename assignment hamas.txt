@@ -1,0 +1,268 @@
+-------------------------------------------------------------
+answer #1
+--------------------------------------------------------------
+void main() {
+
+   
+  int length = 10;
+  int breadth =20;
+  
+  if (length==breadth) {print ("its an square") ; 
+    }else {print ("its an rectangle") ; }
+    
+} (its an rectangle)
+----------------------------------------------------------------
+answer # 2
+----------------------------------------------------------------
+
+void main() {
+
+   
+  int age1 = 20;
+  int age2 = 15;
+  
+  if (age1>age2) {print ("you are younger");
+   } else {print ("you are older");}
+
+} ("you are younger")
+-----------------------------------------------------------------
+answer # 3 :
+------------------------------------------------------------------
+void main() {
+  int numberOfclassesheld = 16;
+  int numberOfclassesattend =10 ;
+  
+  double percentage=(numberOfclassesattend/numberOfclassesheld)*100;
+  
+  if (percentage>=75) {print("student is allowed to sit in exam");
+      } else {print ("student is not allowed to sit exam");}
+ 
+} ("student is not allowed to sit exam")
+
+--------------------------------------------------------------------
+answer # 5 ;
+--------------------------------------------------------------------
+void main() {
+  int temp = 40 ;
+  
+  if (temp<0) {print ("its frezzing");
+              }
+  else if (temp>=0 && temp<=10)  { print ("its very cold");
+                             }
+  else if (temp> 10 && temp <=20) {print ("its cold");
+                                   }
+  else if (temp > 20 &&  temp <=30) {print ("its normal temperature");
+                                    }
+  else if (temp > 30 && temp <=40) {print ("its hot weather");
+                                   }
+  else if (temp >= 40) {print ("its very hot");
+                       }
+  
+}
+---------------------------------------------------------------------
+answer # 6 ;
+--------------------------------------------------------------------
+void main() {
+  String  alphabet= "a";
+  
+  if (alphabet == "a"||
+     alphabet == "e"||
+     alphabet  == "i"||
+     alphabet == "o"||
+     alphabet == "u") {print ("its vowel");}
+  else {print ("its consonent");}
+    
+    
+}
+---------------------------------------------------------------------
+answer # 7 ;
+---------------------------------------------------------------------
+
+void main() {
+  int customerId = 1001;
+  String customerName = "James";
+  int unitsConsumed = 800;
+  double chargePerUnit;
+  double billAmount;
+
+
+if (unitsConsumed <= 199) {
+    chargePerUnit = 1.20;
+  } else if (unitsConsumed < 400) {
+    chargePerUnit = 1.50;
+  } else if (unitsConsumed < 600) {
+    chargePerUnit = 1.80;
+  } else {
+    chargePerUnit = 2.00;
+  }
+
+
+billAmount = unitsConsumed * chargePerUnit;
+
+  print("Customer IDNO: $customerId");
+  print("Customer Name: $customerName");
+  print("Unit Consumed: $unitsConsumed");
+  print("Amount Charges @Rs. $chargePerUnit per unit: $billAmount");
+  print("Net Bill Amount: $billAmount");
+}
+
+-------------------------------------------------------------------------
+answer # 8 ;
+-------------------------------------------------------------------------
+
+void main() {
+  String studentName = "Zayan";
+  String rollNumber = "851245";
+  String studentClass = "8";
+  double english= 85;
+  double urdu= 80;
+  double arabic = 90;
+  double science= 75;
+  double computer= 70;
+
+double totalMarks = subject1 + subject2 + subject3 + subject4 + subject5;
+  double percentage = (totalMarks / 500) * 100;
+  percentage = double.parse(percentage.toStringAsFixed(2));
+
+String grade;
+  if (percentage >= 90) {
+    grade = "A+";
+  } else if (percentage >= 80) {
+    grade = "A";
+  } else if (percentage >= 70) {
+    grade = "B";
+  } else if (percentage >= 60) {
+    grade = "C";
+  } else if (percentage >= 50) {
+    grade = "D";
+  } else {
+    grade = "Fail";
+  }
+
+print("\n===== Marksheet =====");
+  print("Student Name: $studentName");
+  print("Roll Number: $rollNumber");
+  print("Class: $studentClass");
+  print("Total Marks: $totalMarks");
+  print("Percentage: $percentage");
+  print("Grade Obtained: $grade");
+}
+
+---------------------------------------------------------------------------
+answer # 9
+---------------------------------------------------------------------------
+
+void main() {
+  print("Enter a number:");
+  int number = int.parse(stdin.readLineSync()!);
+
+  if (number % 2 == 0) {
+    print("Number is even.");
+    if (number % 5 == 0) {
+      print("Number is divisible by 5.");
+    } else {
+      print("Number is not divisible by 5.");
+    }
+  } else {
+    print("Number is odd.");
+    if (number % 7 == 0) {
+      print("Number is divisible by 7.");
+    } else {
+      print("Number is not divisible by 7.");
+    }
+  }
+}
+
+
+-----------------------------------------------------------------------------------
+answer # 10
+-----------------------------------------------------------------------------------
+
+void main() {
+  print("951357:");
+  int num1 = int.parse(stdin.readLineSync()!);
+
+  print("753654:");
+  int num2 = int.parse(stdin.readLineSync()!);
+
+  print("851245:");
+  int num3 = int.parse(stdin.readLineSync()!);
+
+  int greatest = 951357;
+  int lowest = 951357;
+
+if (753654 > greatest) {
+    greatest = 753654;
+  }
+
+  if (851245 > greatest) {
+    greatest = 851245;
+  }
+
+  if (753654 < lowest) {
+    lowest =753654;
+  }
+
+  if (851245 < lowest) {
+    lowest = 851245;
+  }
+
+  print("The greatest number is: $greatest");
+  print("The lowest number is: $lowest");
+}
+
+-----------------------------------------------------------------------------
+answer # 11 
+-----------------------------------------------------------------------------
+void main() {
+  print("Enter a number:");
+  double number = double.parse(stdin.readLineSync()!);
+
+  double squareRoot = sqrt(number);
+
+  print("The square root of $number is $squareRoot");
+}
+----------------------------------------------------------------------------
+answer # 12 
+----------------------------------------------------------------------------
+void main() {
+  print("Enter temperature in Celsius:");
+  double celsius = double.parse(stdin.readLineSync()!);
+
+  double fahrenheit = (celsius * 9 / 5) + 32;
+
+  print("Temperature in Fahrenheit: $fahrenheit°F");
+}
+--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
